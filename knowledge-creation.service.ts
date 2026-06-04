@@ -62,21 +62,25 @@ export class KnowledgeCreationService {
   }
 
   /**
-   * Task 28: Trigger condition.
-   * - Generic questions: fires as soon as >= 1 peer answer exists.
-   *   A single community answer is sufficient to reframe into a polished FAQ.
-   * - Personal questions: never auto-generate. These are routed to admin
-   *   for individual resolution and are never published as public FAQs.
+   * Task 28: Trigger condition. Fires only when a question has >= 2 community answers.
    */
-  public checkFAQGenerationTrigger(answers: string[], type: 'general' | 'personal'): boolean {
-    if (type === 'personal') return false; // Personal queries are never auto-generated
-    return answers && answers.length >= 1; // Generic: 1 peer answer is enough
+  public checkFAQGenerationTrigger(answers: string[]): boolean {
+    return answers && answers.length >= 2;
   }
 
   /**
-   * Process a single community query and community answers.
-   * Translates them professionally using MiniMax service, normalizes tags,
-   * evaluates quality, and determines the approval status based on the 0.70 threshold.
+   * Process a single community query and community answers into a polished FAQ.
+   *
+   * Flow:
+   *   1. Trigger check  — requires >= 2 answers before running.
+   *   2. generateFAQ()  — AI reframes the raw peer answers into a professional Q&A.
+   *   3. validateFAQSchema() — ensures the output has all required fields.
+   *   4. normalizeTags() — cleans and deduplicates tags (3–5 range).
+   *   5. reviewFAQQuality() — scores the reframed FAQ from 0.0 to 1.0.
+   *   6. Auto-approval:
+   *        score >= 0.70  → FAQ is good enough as reframed → status = 'published' (no admin needed)
+   *        score <  0.70  → AI reframing needs human correction → status = 'pending_review'
+   *   7. Personal routing — appends escalation disclaimer for personal queries.
    */
   public async processCommunityQuestion(
     question: string,
@@ -85,9 +89,8 @@ export class KnowledgeCreationService {
     existingTags: string[] = []
   ): Promise<FAQDocument | null> {
     // 1. Check FAQ Generation Trigger (Task 28)
-    // Personal questions are never auto-generated — they go to admin.
-    // Generic questions fire as soon as there is >= 1 peer answer.
-    if (!this.checkFAQGenerationTrigger(answers, type)) {
+    if (!this.checkFAQGenerationTrigger(answers)) {
+      // Trigger not met (requires >= 2 answers)
       return null;
     }
 
@@ -109,7 +112,9 @@ export class KnowledgeCreationService {
         faqOutput.faqAnswer
       );
 
-      // 5. Auto-approval flow based on 0.70 threshold (Task 27)
+      // 5. Auto-approval decision (Task 27)
+      // score >= 0.70: AI reframing produced a high-quality FAQ → publish directly, no admin needed
+      // score <  0.70: AI reframing needs human correction → send to admin queue for review
       const isApproved = reviewOutput.score >= 0.70;
       const status = isApproved ? 'published' : 'pending_review';
 
