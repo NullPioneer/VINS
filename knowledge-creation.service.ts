@@ -62,10 +62,15 @@ export class KnowledgeCreationService {
   }
 
   /**
-   * Task 28: Trigger condition. Fires only when a question has >= 2 community answers.
+   * Task 28: Trigger condition.
+   * - Generic questions: fires as soon as >= 1 peer answer exists.
+   *   A single community answer is sufficient to reframe into a polished FAQ.
+   * - Personal questions: never auto-generate. These are routed to admin
+   *   for individual resolution and are never published as public FAQs.
    */
-  public checkFAQGenerationTrigger(answers: string[]): boolean {
-    return answers && answers.length >= 2;
+  public checkFAQGenerationTrigger(answers: string[], type: 'general' | 'personal'): boolean {
+    if (type === 'personal') return false; // Personal queries are never auto-generated
+    return answers && answers.length >= 1; // Generic: 1 peer answer is enough
   }
 
   /**
@@ -80,8 +85,9 @@ export class KnowledgeCreationService {
     existingTags: string[] = []
   ): Promise<FAQDocument | null> {
     // 1. Check FAQ Generation Trigger (Task 28)
-    if (!this.checkFAQGenerationTrigger(answers)) {
-      // Trigger not met (requires >= 2 answers)
+    // Personal questions are never auto-generated — they go to admin.
+    // Generic questions fire as soon as there is >= 1 peer answer.
+    if (!this.checkFAQGenerationTrigger(answers, type)) {
       return null;
     }
 
