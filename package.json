@@ -1,0 +1,16 @@
+{
+  "name": "vins-knowledge-creation",
+  "version": "1.0.0",
+  "description": "AI Member 4 (Negha) FAQ pipeline execution",
+  "main": "run_pipeline.ts",
+  "scripts": {
+    "pipeline": "ts-node run_pipeline.ts",
+    "playground": "ts-node test_interface.ts",
+    "zoom": "ts-node run_zoom_pipeline.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "@types/node": "^20.11.0"
+  }
+}

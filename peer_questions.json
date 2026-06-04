@@ -1,0 +1,452 @@
+[
+  {
+    "id": "pq_1",
+    "rawQuestion": "Hey, my HOD is on vacation and can't sign my NOC. Can the Training & Placement Officer (TPO) sign it instead?",
+    "answers": [
+      "Peer: Yes, my TPO signed it and it got approved.",
+      "Admin: Yes, any authorized signatory at your college, including HOD, Acting HOD, Dean, Principal, or TPO, can sign the NOC."
+    ],
+    "tags": ["noc", "selection"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_2",
+    "rawQuestion": "Do I have to print the NOC and sign it by hand or can I just use a digital signature on the PDF?",
+    "answers": [
+      "Peer: I think physical sign is needed.",
+      "Admin: Digital signatures are not accepted on the PDF path. You must print the NOC, get it signed and stamped by hand, scan it, and upload the PDF."
+    ],
+    "tags": ["noc"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_3",
+    "rawQuestion": "my exams are starting next week can i get a week off during the internship to prepare?",
+    "answers": [
+      "Peer: No, they don't allow leave.",
+      "Admin: Leave is not permitted. The 55-day continuous window is a non-negotiable part of the internship. If you have exam conflicts, please defer to the next batch."
+    ],
+    "tags": ["leave", "exams", "timing"],
+    "status": "answered",
+    "type": "personal"
+  },
+  {
+    "id": "pq_4",
+    "rawQuestion": "How much stipend do we get for this? Is there any security deposit?",
+    "answers": [
+      "Peer: No stipend bro, it is unpaid.",
+      "Admin: The VINS internship is completely free and has no stipend. We do not charge anything, and we do not pay any stipend for Bronze and Silver phases."
+    ],
+    "tags": ["stipend"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_5",
+    "rawQuestion": "Will I get a physical certificate shipped to my home address?",
+    "answers": [
+      "Peer: I think it's digital.",
+      "Admin: No, completing the Bronze and Silver phases earns an e-certificate issued on samagama.in. Physical copies are not posted."
+    ],
+    "tags": ["certificate"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_6",
+    "rawQuestion": "I see a yellow VINS panel on my result page. Does this mean I am officially selected?",
+    "answers": [
+      "Peer: Yes, yellow means selected, green is vise.",
+      "Admin: Yes, the yellow VINS panel on your dashboard indicates that you have been selected. You can proceed with the NOC process."
+    ],
+    "tags": ["selection", "offer-letter"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_7",
+    "rawQuestion": "Is it possible to change my project after starting Bronze phase?",
+    "answers": [
+      "Peer: No way, projects are fixed.",
+      "Admin: No, project assignments cannot be changed once they are allocated at the end of the orientation and training phase."
+    ],
+    "tags": ["projects", "mentorship"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_8",
+    "rawQuestion": "How many hours do we need to work daily? Can I do a part-time job alongside?",
+    "answers": [
+      "Admin: VINS is a full-attention, full-time internship requiring 6 to 10 hours of work per day. You cannot hold a part-time job or other engagements concurrently."
+    ],
+    "tags": ["timing", "schedule"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_9",
+    "rawQuestion": "Can I submit my NOC after the internship starts? I'm waiting for college reopening.",
+    "answers": [
+      "Admin: No. Your internship cannot formally start until your NOC is uploaded and validated. Please upload it as soon as possible."
+    ],
+    "tags": ["noc", "timing"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_10",
+    "rawQuestion": "I uploaded my NOC 2 hours ago but it still says 'pending verification'. What should I do?",
+    "answers": [
+      "Peer: Wait for a day.",
+      "Admin: Verification can take between one hour and one full working day. Please wait. There is no need to escalate unless it exceeds 24 hours."
+    ],
+    "tags": ["noc", "selection"],
+    "status": "answered",
+    "type": "personal"
+  },
+  {
+    "id": "pq_11",
+    "rawQuestion": "I'm doing a course on Coursera. Can I get an NOC from Coursera for this internship?",
+    "answers": [
+      "Admin: No. The internship requires enrollment in a full-time degree program at a recognized college. Online courses or bootcamps do not satisfy this."
+    ],
+    "tags": ["noc", "selection"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_12",
+    "rawQuestion": "What is Rosetta and is it compulsory to write in it daily?",
+    "answers": [
+      "Peer: Yes it is compulsory.",
+      "Admin: Rosetta is your daily internship journal. You must update it every single day. It is a mandatory requirement for earning your certificate."
+    ],
+    "tags": ["schedule"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_13",
+    "rawQuestion": "Can I write my Rosetta journal using AI like ChatGPT to summarize my work?",
+    "answers": [
+      "Peer: Don't do that, they have detectors.",
+      "Admin: No. AI-generated entries in Rosetta are strictly prohibited. The journal must reflect your own thinking. Using AI will lead to termination."
+    ],
+    "tags": ["schedule"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_14",
+    "rawQuestion": "What happens if I miss a live session in Phase 1?",
+    "answers": [
+      "Peer: You lose points.",
+      "Admin: Attendance in live sessions is mandatory. Missing sessions without prior consent will impact your Spurti Points and may lead to removal."
+    ],
+    "tags": ["vibe-lms", "schedule"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_15",
+    "rawQuestion": "What are Spurti Points (SP) and what is the minimum we need to maintain?",
+    "answers": [
+      "Admin: Spurti Points indicate engagement. You should maintain your points above the threshold communicated by your mentor to avoid review."
+    ],
+    "tags": ["spurti-points"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_16",
+    "rawQuestion": "Can I form a team with my friends from the same college?",
+    "answers": [
+      "Peer: No, teams are randomized.",
+      "Admin: Teams are assigned by mentors based on project requirements. You cannot choose your own team members."
+    ],
+    "tags": ["team-formation"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_17",
+    "rawQuestion": "My login for ViBe LMS is not working. It says user not found.",
+    "answers": [
+      "Peer: Use the email where you got the selection mail.",
+      "Admin: Please register on ViBe LMS using the email address where you received your VINS selection result. If issues persist, raise #escalate in Yaksha chat."
+    ],
+    "tags": ["vibe-lms"],
+    "status": "answered",
+    "type": "personal"
+  },
+  {
+    "id": "pq_18",
+    "rawQuestion": "Does VINS offer internship extensions if we need more time to finish the project?",
+    "answers": [
+      "Peer: 1 month grace is allowed.",
+      "Admin: You can take an optional 1-month grace period, but all VINS internships for this cycle must end on or before 31 December 2026."
+    ],
+    "tags": ["timing", "projects"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_19",
+    "rawQuestion": "Can I talk to my mentor directly on WhatsApp?",
+    "answers": [
+      "Peer: No, only Slack or Discord.",
+      "Admin: No. WhatsApp communication is prohibited. All official discussions must occur on the designated platform channels (Slack/Discord/Yaksha)."
+    ],
+    "tags": ["communication"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_20",
+    "rawQuestion": "If I get selected, do I get the offer letter on my email?",
+    "answers": [
+      "Peer: No, download it from dashboard.",
+      "Admin: No. The offer letter is not emailed. It lives on your dashboard at samagama.in and will be downloadable once your NOC is validated."
+    ],
+    "tags": ["offer-letter", "selection"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_21",
+    "rawQuestion": "Is there any grade report along with the internship certificate?",
+    "answers": [
+      "Peer: Yes, it shows your scores.",
+      "Admin: Yes, a grade report summarizing your project contributions and Rosetta performance is issued alongside the completion certificate."
+    ],
+    "tags": ["certificate"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_22",
+    "rawQuestion": "I forgot to upload the NOC and the deadline has passed. Can I still upload it?",
+    "answers": [
+      "Peer: Yes, there is no calendar deadline, but your start will be delayed.",
+      "Admin: You can upload your NOC late, but your internship start date will be pushed back accordingly. Try to upload it as soon as possible."
+    ],
+    "tags": ["noc", "timing"],
+    "status": "answered",
+    "type": "personal"
+  },
+  {
+    "id": "pq_23",
+    "rawQuestion": "Can dual degree students get the NOC signed by their PG department instead of UG?",
+    "answers": [
+      "Peer: Yes, either is fine.",
+      "Admin: Yes, dual degree students can get the NOC signed by either their UG or PG department, whichever is convenient."
+    ],
+    "tags": ["noc"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_24",
+    "rawQuestion": "I want to take leave for 2 days for my sister's wedding next week. Is it possible?",
+    "answers": [
+      "Peer: No leave allowed.",
+      "Admin: No. VINS has a strict continuous commitment policy. Leave is not permitted. If you cannot commit, you will need to join the next batch."
+    ],
+    "tags": ["leave", "timing"],
+    "status": "answered",
+    "type": "personal"
+  },
+  {
+    "id": "pq_25",
+    "rawQuestion": "What is the difference between Gold and Platinum badges?",
+    "answers": [
+      "Peer: Gold is for features, Platinum is lab visit.",
+      "Admin: Gold badge is awarded for exceptional feature contributions during the project. Platinum is a standing invitation to visit the lab with a travel stipend."
+    ],
+    "tags": ["selection", "certificate"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_26",
+    "rawQuestion": "How do we get assigned to projects? Is it based on our resume?",
+    "answers": [
+      "Peer: Based on your training scores.",
+      "Admin: Project allocation is done after evaluating your performance in the Phase 1 training (Bronze phase) and alignment with mentor needs."
+    ],
+    "tags": ["projects", "mentorship"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_27",
+    "rawQuestion": "Hey, I need some help regarding Slack channel access. I didn't receive the invite link.",
+    "answers": [],
+    "status": "not_answered",
+    "type": "personal"
+  },
+  {
+    "id": "pq_28",
+    "rawQuestion": "Does anyone know if we need a high-end laptop for the AIML projects?",
+    "answers": [
+      "Peer: I think basic laptop is fine since we do training on cloud.",
+      "Admin: A standard laptop is sufficient as compute-heavy tasks will run on cloud resources provided by the lab."
+    ],
+    "tags": ["projects"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_29",
+    "rawQuestion": "Is it possible to complete the internship in 1 month if we work double time?",
+    "answers": [
+      "Peer: No, 2 months is minimum.",
+      "Admin: No. The VINS internship has a mandatory minimum duration of 2 months (55 days of active work). It cannot be condensed."
+    ],
+    "tags": ["timing", "schedule"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_30",
+    "rawQuestion": "I have an exam on June 15th. Can I submit my project a week early and leave?",
+    "answers": [
+      "Peer: No, early exit is not allowed.",
+      "Admin: No. Early completion is not supported. You must complete the full 55-day window. If exams clash, you should defer your start date."
+    ],
+    "tags": ["exams", "timing", "leave"],
+    "status": "answered",
+    "type": "personal"
+  },
+  {
+    "id": "pq_31",
+    "rawQuestion": "proctoring strict",
+    "answers": [
+      "Peer: yes",
+      "Peer 2: yeah"
+    ],
+    "tags": ["vibe-lms"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_32",
+    "rawQuestion": "Hey guys, can anyone tell me how to access the Yaksha AI assistant?",
+    "answers": [],
+    "status": "not_answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_33",
+    "rawQuestion": "My teammate is doing literally nothing on the codebase for the past week. Can you please change my team?",
+    "answers": [
+      "Peer: You should talk to your mentor.",
+      "Admin: Team allocations are final. If your teammate is inactive, report this to your mentor on official channels. Do not halt your own contributions."
+    ],
+    "tags": ["team-formation", "mentorship"],
+    "status": "answered",
+    "type": "personal"
+  },
+  {
+    "id": "pq_34",
+    "rawQuestion": "I started the cohort on May 20 but my college announced exams starting June 5. Can I shift to the July batch?",
+    "answers": [
+      "Peer: You'll be relieved and deferred.",
+      "Admin: Yes, you will be relieved from the current batch immediately. You can re-initiate and join a future batch once your exams are over."
+    ],
+    "tags": ["timing", "exams"],
+    "status": "answered",
+    "type": "personal"
+  },
+  {
+    "id": "pq_35",
+    "rawQuestion": "Can I do the whole VINS coding and submissions from my phone? My laptop screen is cracked.",
+    "answers": [
+      "Peer: No way, coding on phone is impossible.",
+      "Admin: No. A standard laptop/desktop is mandatory for project contributions. Submissions and coding tasks cannot be completed on a mobile device."
+    ],
+    "tags": ["projects"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_36",
+    "rawQuestion": "I got a proctoring alert because my brother walked in during the quiz. Will I get suspended?",
+    "answers": [
+      "Peer: TAs review it. If it was a mistake it's fine.",
+      "Admin: Multiple flags will block your attempt. For accidental flags, please contact your TA to review the recording and reset the status if genuine."
+    ],
+    "tags": ["vibe-lms"],
+    "status": "answered",
+    "type": "personal"
+  },
+  {
+    "id": "pq_37",
+    "rawQuestion": "What happens if we submit our Phase 1 task late? Do we lose Spurti Points?",
+    "answers": [
+      "Peer: Yes, SP goes down for late submissions.",
+      "Admin: Submitting tasks after the deadline will result in a deduction of Spurti Points. Consistent late submissions will trigger removal review."
+    ],
+    "tags": ["spurti-points", "schedule"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_38",
+    "rawQuestion": "Does VINS provide a Letter of Recommendation (LOR) for job search after completion?",
+    "answers": [
+      "Peer: Yes, mentors write them.",
+      "Admin: Mentors may provide a Letter of Recommendation (LOR) at their discretion based on high performance in the Silver/Gold phases."
+    ],
+    "tags": ["certificate", "mentorship"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_39",
+    "rawQuestion": "Can I update Rosetta once in a week? I find it hard to write daily.",
+    "answers": [
+      "Peer: No, daily update is checked by system.",
+      "Admin: Daily updates in Rosetta are mandatory. Weekly batches are not permitted. Failure to write daily will negatively impact your Spurti Points."
+    ],
+    "tags": ["schedule"],
+    "status": "answered",
+    "type": "general"
+  },
+  {
+    "id": "pq_40",
+    "rawQuestion": "My selection panel is showing selection-in-progress for 3 days. Am I rejected?",
+    "answers": [
+      "Peer: Ask Yaksha.",
+      "Admin: No. Results are released in phases. If selection is in progress, please check back in 24 hours or raise #escalate in chat."
+    ],
+    "tags": ["selection"],
+    "status": "answered",
+    "type": "personal"
+  },
+  {
+    "id": "pq_41",
+    "rawQuestion": "My mentor has not responded to my queries on Slack for 48 hours. What should I do?",
+    "answers": [
+      "Peer: Mentors are busy, check with TA.",
+      "Admin: If a mentor is unresponsive on Slack, contact the assigned TA or write #escalate in the Yaksha chat for assistance."
+    ],
+    "tags": ["mentorship", "communication"],
+    "status": "answered",
+    "type": "personal"
+  },
+  {
+    "id": "pq_42",
+    "rawQuestion": "Is the final demo presentation evaluated by IIT Ropar professors directly?",
+    "answers": [
+      "Peer: Yes, Sudarshan Iyengar and other professors evaluate it.",
+      "Admin: Yes, final project presentations are evaluated by the Vicharanashala Lab coordinators and IIT Ropar faculty panels."
+    ],
+    "tags": ["certificate", "projects"],
+    "status": "answered",
+    "type": "general"
+  }
+]

@@ -1,0 +1,506 @@
+[
+  {
+    "faqQuestion": "Hey, my HOD is on vacation and can't sign my NOC. Can the Training & Placement Officer (TPO) sign it instead?",
+    "faqAnswer": "Peer: Yes, my TPO signed it and it got approved.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  },
+  {
+    "faqQuestion": "Do I have to print the NOC and sign it by hand or can I just use a digital signature on the PDF?",
+    "faqAnswer": "Peer: I think physical sign is needed.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  },
+  {
+    "faqQuestion": "my exams are starting next week can i get a week off during the internship to prepare?",
+    "faqAnswer": "Peer: No, they don't allow leave. For individual case-by-case reviews, please raise an official ticket on your samagama.in dashboard or type #escalate in the Yaksha chat to reach an coordinator.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "personal"
+  },
+  {
+    "faqQuestion": "How much stipend do we get for this? Is there any security deposit?",
+    "faqAnswer": "Peer: No stipend bro, it is unpaid.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  },
+  {
+    "faqQuestion": "Will I get a physical certificate shipped to my home address?",
+    "faqAnswer": "Peer: I think it's digital.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  },
+  {
+    "faqQuestion": "I see a yellow VINS panel on my result page. Does this mean I am officially selected?",
+    "faqAnswer": "Peer: Yes, yellow means selected, green is vise.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  },
+  {
+    "faqQuestion": "Is it possible to change my project after starting Bronze phase?",
+    "faqAnswer": "Peer: No way, projects are fixed.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  },
+  {
+    "faqQuestion": "I uploaded my NOC 2 hours ago but it still says 'pending verification'. What should I do?",
+    "faqAnswer": "Peer: Wait for a day. For individual case-by-case reviews, please raise an official ticket on your samagama.in dashboard or type #escalate in the Yaksha chat to reach an coordinator.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "personal"
+  },
+  {
+    "faqQuestion": "What is Rosetta and is it compulsory to write in it daily?",
+    "faqAnswer": "Peer: Yes it is compulsory.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  },
+  {
+    "faqQuestion": "Can I write my Rosetta journal using AI like ChatGPT to summarize my work?",
+    "faqAnswer": "Peer: Don't do that, they have detectors.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  },
+  {
+    "faqQuestion": "What happens if I miss a live session in Phase 1?",
+    "faqAnswer": "Peer: You lose points.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  },
+  {
+    "faqQuestion": "Can I form a team with my friends from the same college?",
+    "faqAnswer": "Peer: No, teams are randomized.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  },
+  {
+    "faqQuestion": "My login for ViBe LMS is not working. It says user not found.",
+    "faqAnswer": "Peer: Use the email where you got the selection mail. For individual case-by-case reviews, please raise an official ticket on your samagama.in dashboard or type #escalate in the Yaksha chat to reach an coordinator.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "personal"
+  },
+  {
+    "faqQuestion": "Does VINS offer internship extensions if we need more time to finish the project?",
+    "faqAnswer": "Peer: 1 month grace is allowed.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  },
+  {
+    "faqQuestion": "Can I talk to my mentor directly on WhatsApp?",
+    "faqAnswer": "Peer: No, only Slack or Discord.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  },
+  {
+    "faqQuestion": "If I get selected, do I get the offer letter on my email?",
+    "faqAnswer": "Peer: No, download it from dashboard.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  },
+  {
+    "faqQuestion": "Is there any grade report along with the internship certificate?",
+    "faqAnswer": "Peer: Yes, it shows your scores.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  },
+  {
+    "faqQuestion": "I forgot to upload the NOC and the deadline has passed. Can I still upload it?",
+    "faqAnswer": "Peer: Yes, there is no calendar deadline, but your start will be delayed. For individual case-by-case reviews, please raise an official ticket on your samagama.in dashboard or type #escalate in the Yaksha chat to reach an coordinator.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "personal"
+  },
+  {
+    "faqQuestion": "Can dual degree students get the NOC signed by their PG department instead of UG?",
+    "faqAnswer": "Peer: Yes, either is fine.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  },
+  {
+    "faqQuestion": "I want to take leave for 2 days for my sister's wedding next week. Is it possible?",
+    "faqAnswer": "Peer: No leave allowed. For individual case-by-case reviews, please raise an official ticket on your samagama.in dashboard or type #escalate in the Yaksha chat to reach an coordinator.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "personal"
+  },
+  {
+    "faqQuestion": "What is the difference between Gold and Platinum badges?",
+    "faqAnswer": "Peer: Gold is for features, Platinum is lab visit.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  },
+  {
+    "faqQuestion": "How do we get assigned to projects? Is it based on our resume?",
+    "faqAnswer": "Peer: Based on your training scores.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  },
+  {
+    "faqQuestion": "Does anyone know if we need a high-end laptop for the AIML projects?",
+    "faqAnswer": "Peer: I think basic laptop is fine since we do training on cloud.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  },
+  {
+    "faqQuestion": "Is it possible to complete the internship in 1 month if we work double time?",
+    "faqAnswer": "Peer: No, 2 months is minimum.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  },
+  {
+    "faqQuestion": "I have an exam on June 15th. Can I submit my project a week early and leave?",
+    "faqAnswer": "Peer: No, early exit is not allowed. For individual case-by-case reviews, please raise an official ticket on your samagama.in dashboard or type #escalate in the Yaksha chat to reach an coordinator.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "personal"
+  },
+  {
+    "faqQuestion": "proctoring strict",
+    "faqAnswer": "Peer: yes",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  },
+  {
+    "faqQuestion": "My teammate is doing literally nothing on the codebase for the past week. Can you please change my team?",
+    "faqAnswer": "Peer: You should talk to your mentor. For individual case-by-case reviews, please raise an official ticket on your samagama.in dashboard or type #escalate in the Yaksha chat to reach an coordinator.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "personal"
+  },
+  {
+    "faqQuestion": "I started the cohort on May 20 but my college announced exams starting June 5. Can I shift to the July batch?",
+    "faqAnswer": "Peer: You'll be relieved and deferred. For individual case-by-case reviews, please raise an official ticket on your samagama.in dashboard or type #escalate in the Yaksha chat to reach an coordinator.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "personal"
+  },
+  {
+    "faqQuestion": "Can I do the whole VINS coding and submissions from my phone? My laptop screen is cracked.",
+    "faqAnswer": "Peer: No way, coding on phone is impossible.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  },
+  {
+    "faqQuestion": "I got a proctoring alert because my brother walked in during the quiz. Will I get suspended?",
+    "faqAnswer": "Peer: TAs review it. If it was a mistake it's fine. For individual case-by-case reviews, please raise an official ticket on your samagama.in dashboard or type #escalate in the Yaksha chat to reach an coordinator.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "personal"
+  },
+  {
+    "faqQuestion": "What happens if we submit our Phase 1 task late? Do we lose Spurti Points?",
+    "faqAnswer": "Peer: Yes, SP goes down for late submissions.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  },
+  {
+    "faqQuestion": "Does VINS provide a Letter of Recommendation (LOR) for job search after completion?",
+    "faqAnswer": "Peer: Yes, mentors write them.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  },
+  {
+    "faqQuestion": "Can I update Rosetta once in a week? I find it hard to write daily.",
+    "faqAnswer": "Peer: No, daily update is checked by system.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  },
+  {
+    "faqQuestion": "My selection panel is showing selection-in-progress for 3 days. Am I rejected?",
+    "faqAnswer": "Peer: Ask Yaksha. For individual case-by-case reviews, please raise an official ticket on your samagama.in dashboard or type #escalate in the Yaksha chat to reach an coordinator.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "personal"
+  },
+  {
+    "faqQuestion": "My mentor has not responded to my queries on Slack for 48 hours. What should I do?",
+    "faqAnswer": "Peer: Mentors are busy, check with TA. For individual case-by-case reviews, please raise an official ticket on your samagama.in dashboard or type #escalate in the Yaksha chat to reach an coordinator.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "personal"
+  },
+  {
+    "faqQuestion": "Is the final demo presentation evaluated by IIT Ropar professors directly?",
+    "faqAnswer": "Peer: Yes, Sudarshan Iyengar and other professors evaluate it.",
+    "tags": [
+      "general",
+      "internship",
+      "vins"
+    ],
+    "quality_score": 0.85,
+    "status": "published",
+    "approved": true,
+    "issues": [],
+    "type": "general"
+  }
+]
