@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import * as readline from 'readline';
-import { FAQOutput, TagsOutput, QualityOutput } from './samarpit-ai.interface';
+import { FAQOutput, TagsOutput, QualityOutput } from './ai-service.interface';
 import { IZoomTranscriptionAIService, ZoomTranscriptionProcessor } from './zoom-transcription-processor';
 import { FAQDocument } from './knowledge-creation.service';
 
@@ -309,4 +309,5 @@ function printResults(results: FAQDocument[]) {
 
 // Start CLI
 showMenu();
+
 

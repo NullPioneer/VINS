@@ -1,11 +1,11 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import * as readline from 'readline';
-import { IAIService, FAQOutput, TagsOutput, QualityOutput } from './samarpit-ai.interface';
+import { IAIService, FAQOutput, TagsOutput, QualityOutput } from './ai-service.interface';
 import { KnowledgeCreationService } from './knowledge-creation.service';
 
 /**
- * Mock implementation of Samarpit's AI Service Layer (MiniMax-2 client)
+ * Mock implementation of the AI service module's AI Service Layer (MiniMax-2 client)
  * to run Negha's pipeline in isolation.
  */
 class MockaiService implements IAIService {
@@ -373,4 +373,5 @@ function printPolishedResult(polished: any, numAnswers: number) {
 
 // Start the playground CLI
 showMenu();
+
 

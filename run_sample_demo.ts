@@ -8,11 +8,11 @@
  * Each phase is printed with a clear explanation of what is happening.
  */
 
-import { IAIService, FAQOutput, TagsOutput, QualityOutput } from './samarpit-ai.interface';
+import { IAIService, FAQOutput, TagsOutput, QualityOutput } from './ai-service.interface';
 import { KnowledgeCreationService } from './knowledge-creation.service';
 import { IZoomTranscriptionAIService, ZoomTranscriptionProcessor } from './zoom-transcription-processor';
 
-// ─── Real Samarpit Adapter (same as run_pipeline.ts) ─────────────────────────
+// ─── Real AI service module Adapter (same as run_pipeline.ts) ─────────────────────────
 import { generateFAQ as _generateFAQ }         from './cs45/ai_functions/faq_ai_service/src/services/generateFAQ';
 import { generateTags as _generateTags }        from './cs45/ai_functions/faq_ai_service/src/services/generateTags';
 import { reviewFAQQuality as _reviewFAQQuality } from './cs45/ai_functions/faq_ai_service/src/services/reviewFAQQuality';
@@ -79,7 +79,7 @@ async function runCommunityPipeline() {
     "Peer: Yes, my TPO signed it and it was accepted.",
     "Admin: Any authorized signatory—HOD, Dean, Principal, or TPO—can sign the NOC."
   ];
-  const questionType: 'general' | 'personal' = 'general'; // Set by Vishal's classifyQuery()
+  const questionType: 'general' | 'personal' = 'general'; // Set by the query classification module's classifyQuery()
 
   phase('1', 'Trigger Check (≥ 2 answers)',
     'Your service only fires FAQ generation when a question has at least 2 community answers.\n' +
@@ -91,11 +91,11 @@ async function runCommunityPipeline() {
   const adapter = new aiServiceAdapter();
   const service = new KnowledgeCreationService(adapter);
 
-  phase('2', 'generateFAQ() — Samarpit\'s real service',
-    'Passes the raw question + answers to Samarpit\'s generateFAQ().\n' +
+  phase('2', 'generateFAQ() — AI service module\'s real service',
+    'Passes the raw question + answers to AI service module\'s generateFAQ().\n' +
     '│     His function builds an LLM prompt and returns a structured FAQ object.\n' +
     '│     (Currently returns a stub; will use MiniMax once API is wired.)');
-  console.log('│  Calling Samarpit\'s generateFAQ()...');
+  console.log('│  Calling AI service module\'s generateFAQ()...');
   const faqOut = await adapter.generateFAQ(sampleQuestion, sampleAnswers);
   result('  faqQuestion', `"${faqOut.faqQuestion.slice(0,60)}"`);
   result('  faqAnswer',   `"${faqOut.faqAnswer.slice(0,60)}..."`);
@@ -109,8 +109,8 @@ async function runCommunityPipeline() {
   result('  normalized tags', JSON.stringify(normalizedTags));
   end();
 
-  phase('4', 'reviewFAQQuality() — Samarpit\'s real service',
-    'Passes the polished question + answer to Samarpit\'s reviewFAQQuality().\n' +
+  phase('4', 'reviewFAQQuality() — AI service module\'s real service',
+    'Passes the polished question + answer to AI service module\'s reviewFAQQuality().\n' +
     '│     Returns a quality score (0.0–1.0) and a list of issues found.');
   const reviewOut = await adapter.reviewFAQQuality(faqOut.faqQuestion, faqOut.faqAnswer);
   result('  score',    `${reviewOut.score} / 1.0`);
@@ -222,4 +222,5 @@ async function runZoomPipeline() {
   console.log('  Your Knowledge Creation Layer is working end-to-end.');
   console.log('═'.repeat(60) + '\n');
 })();
+
 

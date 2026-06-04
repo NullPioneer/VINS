@@ -1,4 +1,4 @@
-import { IAIService, FAQOutput, QualityOutput } from './samarpit-ai.interface';
+import { IAIService, FAQOutput, QualityOutput } from './ai-service.interface';
 
 export interface FAQDocument {
   faqQuestion: string;
@@ -192,4 +192,5 @@ export class KnowledgeCreationService {
     return results;
   }
 }
+
 

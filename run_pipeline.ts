@@ -1,11 +1,11 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { IAIService, FAQOutput, TagsOutput, QualityOutput } from './samarpit-ai.interface';
+import { IAIService, FAQOutput, TagsOutput, QualityOutput } from './ai-service.interface';
 import { KnowledgeCreationService, FAQDocument } from './knowledge-creation.service';
 
-// ─── Real Samarpit AI Service Adapter ────────────────────────────────────────
+// ─── Real AI Service Adapter ────────────────────────────────────────
 // Wraps the actual service functions from cs45/ai_functions/faq_ai_service.
-// Samarpit's functions still return hardcoded stubs internally (MiniMax not yet
+// The AI service functions still return hardcoded stubs internally (MiniMax not yet
 // wired), but ALL prompt-building logic and validators run for real.
 // When MiniMax is connected, this adapter requires zero changes.
 import { generateFAQ as _generateFAQ } from './cs45/ai_functions/faq_ai_service/src/services/generateFAQ';
@@ -14,7 +14,7 @@ import { reviewFAQQuality as _reviewFAQQuality } from './cs45/ai_functions/faq_a
 
 class aiServiceAdapter implements IAIService {
 
-  // Delegates directly to Samarpit's real generateFAQ function.
+  // Delegates directly to the AI service module's generateFAQ function.
   // His function builds the LLM prompt and validates the response schema.
   public async generateFAQ(question: string, answers: string[]): Promise<FAQOutput> {
     const result = await _generateFAQ(question, answers);
@@ -26,13 +26,13 @@ class aiServiceAdapter implements IAIService {
     };
   }
 
-  // Delegates to Samarpit's real generateTags function.
+  // Delegates to the AI service module's generateTags function.
   public async generateTags(content: string): Promise<TagsOutput> {
     const result = await _generateTags(content);
     return { tags: result.tags };
   }
 
-  // Delegates to Samarpit's real reviewFAQQuality function.
+  // Delegates to the AI service module's reviewFAQQuality function.
   public async reviewFAQQuality(
     faqQuestion: string,
     faqAnswer: string,
@@ -46,9 +46,9 @@ class aiServiceAdapter implements IAIService {
   }
 }
 
-// ─── Backend AiService Adapter (Vishal's Classification Logic) ───────────────
+// ─── Backend AiService Adapter (Query Classification Logic) ───────────────
 // The backend AiService already implements classifyQuery() and analyzeToxicity()
-// using the same heuristics Vishal defined. We replicate the logic here in a
+// using the same heuristics the query classification module defined. We replicate the logic here in a
 // lightweight standalone class so the runner does not need NestJS DI to boot.
 class BackendAiAdapter {
   classifyQuery(text: string): { type: 'generic' | 'personal' } {
@@ -117,13 +117,13 @@ async function run() {
     }
   }
 
-  // 2. Initialize Service Layer with Samarpit's real adapter
-  console.log('[3/4] Initializing KnowledgeCreationService with Samarpit\'s real AI service adapter...');
+  // 2. Initialize Service Layer with the AI service module's adapter
+  console.log('[3/4] Initializing KnowledgeCreationService with the real AI service adapter\'s real AI service adapter...');
   const realAIService = new aiServiceAdapter();
   const service = new KnowledgeCreationService(realAIService);
 
   // 3. Run Pipeline
-  console.log('[4/4] Evaluating and translating questions via Negha\'s pipeline (Samarpit real adapter)...');
+  console.log('[4/4] Evaluating and translating questions via Negha\'s pipeline (real AI service adapter)...');
   const results = await service.evaluatePeerQuestions(rawQuestions, existingTags);
 
   // 4. Summarize Results
@@ -162,4 +162,5 @@ async function run() {
 run().catch(err => {
   console.error('Fatal Pipeline Error:', err);
 });
+
 
