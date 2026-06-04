@@ -15,7 +15,7 @@ export interface QualityOutput {
   issues: string[];
 }
 
-export interface ISamarpitAIService {
+export interface IAIService {
   /**
    * D-05 FAQ Generation from Community Answers
    * Uses AI to synthesize a clean, professional, reusable FAQ entry from community feedback.
@@ -37,3 +37,4 @@ export interface ISamarpitAIService {
     faqAnswer: string
   ): Promise<QualityOutput>;
 }
+

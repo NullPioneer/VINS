@@ -1,11 +1,11 @@
-import { ISamarpitAIService, FAQOutput } from './samarpit-ai.interface';
+import { IAIService, FAQOutput } from './samarpit-ai.interface';
 import { KnowledgeCreationService, FAQDocument } from './knowledge-creation.service';
 
 /**
  * Interface extending Samarpit's AI Service to add Zoom transcription capability.
  * This keeps the main AI interface decoupled until it is fully integrated.
  */
-export interface IZoomTranscriptionAIService extends ISamarpitAIService {
+export interface IZoomTranscriptionAIService extends IAIService {
   /**
    * Parses/Extracts structured FAQ objects from a raw Zoom meeting transcript.
    */
@@ -83,3 +83,4 @@ export class ZoomTranscriptionProcessor extends KnowledgeCreationService {
     }
   }
 }
+

@@ -1,14 +1,14 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import * as readline from 'readline';
-import { ISamarpitAIService, FAQOutput, TagsOutput, QualityOutput } from './samarpit-ai.interface';
+import { IAIService, FAQOutput, TagsOutput, QualityOutput } from './samarpit-ai.interface';
 import { KnowledgeCreationService } from './knowledge-creation.service';
 
 /**
  * Mock implementation of Samarpit's AI Service Layer (MiniMax-2 client)
  * to run Negha's pipeline in isolation.
  */
-class MockSamarpitAIService implements ISamarpitAIService {
+class MockaiService implements IAIService {
   
   public async generateFAQ(question: string, answers: string[]): Promise<FAQOutput> {
     const faqQuestion = this.professionalizeQuestion(question);
@@ -224,7 +224,7 @@ const askQuestion = (query: string): Promise<string> => {
   return new Promise((resolve) => rl.question(query, resolve));
 };
 
-const mockAIService = new MockSamarpitAIService();
+const mockAIService = new MockaiService();
 const service = new KnowledgeCreationService(mockAIService);
 const peerQuestionsPath = path.join(__dirname, 'peer_questions.json');
 
@@ -373,3 +373,4 @@ function printPolishedResult(polished: any, numAnswers: number) {
 
 // Start the playground CLI
 showMenu();
+

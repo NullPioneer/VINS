@@ -8,7 +8,7 @@
  * Each phase is printed with a clear explanation of what is happening.
  */
 
-import { ISamarpitAIService, FAQOutput, TagsOutput, QualityOutput } from './samarpit-ai.interface';
+import { IAIService, FAQOutput, TagsOutput, QualityOutput } from './samarpit-ai.interface';
 import { KnowledgeCreationService } from './knowledge-creation.service';
 import { IZoomTranscriptionAIService, ZoomTranscriptionProcessor } from './zoom-transcription-processor';
 
@@ -17,7 +17,7 @@ import { generateFAQ as _generateFAQ }         from './cs45/ai_functions/faq_ai_
 import { generateTags as _generateTags }        from './cs45/ai_functions/faq_ai_service/src/services/generateTags';
 import { reviewFAQQuality as _reviewFAQQuality } from './cs45/ai_functions/faq_ai_service/src/services/reviewFAQQuality';
 
-class SamarpitAIServiceAdapter implements IZoomTranscriptionAIService {
+class aiServiceAdapter implements IZoomTranscriptionAIService {
   async generateFAQ(question: string, answers: string[]): Promise<FAQOutput> {
     const r = await _generateFAQ(question, answers);
     return { faqQuestion: r.faqQuestion, faqAnswer: r.faqAnswer, tags: r.tags, quality_score: r.quality_score };
@@ -88,7 +88,7 @@ async function runCommunityPipeline() {
   console.log(`│  Trigger fires?   : ${sampleAnswers.length >= 2 ? '✅ YES' : '❌ NO'}`);
   end();
 
-  const adapter = new SamarpitAIServiceAdapter();
+  const adapter = new aiServiceAdapter();
   const service = new KnowledgeCreationService(adapter);
 
   phase('2', 'generateFAQ() — Samarpit\'s real service',
@@ -176,7 +176,7 @@ async function runZoomPipeline() {
   console.log('│    ...');
   end();
 
-  const adapter   = new SamarpitAIServiceAdapter();
+  const adapter   = new aiServiceAdapter();
   const processor = new ZoomTranscriptionProcessor(adapter);
 
   phase('2', 'extractFAQsFromTranscription() — Zoom AI Service',
@@ -222,3 +222,4 @@ async function runZoomPipeline() {
   console.log('  Your Knowledge Creation Layer is working end-to-end.');
   console.log('═'.repeat(60) + '\n');
 })();
+

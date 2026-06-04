@@ -1,4 +1,4 @@
-import { ISamarpitAIService, FAQOutput, QualityOutput } from './samarpit-ai.interface';
+import { IAIService, FAQOutput, QualityOutput } from './samarpit-ai.interface';
 
 export interface FAQDocument {
   faqQuestion: string;
@@ -12,7 +12,7 @@ export interface FAQDocument {
 }
 
 export class KnowledgeCreationService {
-  constructor(private readonly samarpitAIService: ISamarpitAIService) {}
+  constructor(private readonly aiService: IAIService) {}
 
   /**
    * Task 24 & 25: Validates that the FAQ output matches the required schema.
@@ -87,7 +87,7 @@ export class KnowledgeCreationService {
 
     try {
       // 2. Consume generateFAQ() (Task 25)
-      const faqOutput = await this.samarpitAIService.generateFAQ(question, answers);
+      const faqOutput = await this.aiService.generateFAQ(question, answers);
 
       // Validate output schema (Task 24 & 25)
       if (!this.validateFAQSchema(faqOutput)) {
@@ -98,7 +98,7 @@ export class KnowledgeCreationService {
       const normalizedTags = this.normalizeTags(faqOutput.tags, existingTags);
 
       // 4. Consume reviewFAQQuality() (Task 27)
-      const reviewOutput: QualityOutput = await this.samarpitAIService.reviewFAQQuality(
+      const reviewOutput: QualityOutput = await this.aiService.reviewFAQQuality(
         faqOutput.faqQuestion,
         faqOutput.faqAnswer
       );
@@ -181,3 +181,4 @@ export class KnowledgeCreationService {
     return results;
   }
 }
+

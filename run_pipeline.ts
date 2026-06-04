@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { ISamarpitAIService, FAQOutput, TagsOutput, QualityOutput } from './samarpit-ai.interface';
+import { IAIService, FAQOutput, TagsOutput, QualityOutput } from './samarpit-ai.interface';
 import { KnowledgeCreationService, FAQDocument } from './knowledge-creation.service';
 
 // ─── Real Samarpit AI Service Adapter ────────────────────────────────────────
@@ -12,7 +12,7 @@ import { generateFAQ as _generateFAQ } from './cs45/ai_functions/faq_ai_service/
 import { generateTags as _generateTags } from './cs45/ai_functions/faq_ai_service/src/services/generateTags';
 import { reviewFAQQuality as _reviewFAQQuality } from './cs45/ai_functions/faq_ai_service/src/services/reviewFAQQuality';
 
-class SamarpitAIServiceAdapter implements ISamarpitAIService {
+class aiServiceAdapter implements IAIService {
 
   // Delegates directly to Samarpit's real generateFAQ function.
   // His function builds the LLM prompt and validates the response schema.
@@ -119,7 +119,7 @@ async function run() {
 
   // 2. Initialize Service Layer with Samarpit's real adapter
   console.log('[3/4] Initializing KnowledgeCreationService with Samarpit\'s real AI service adapter...');
-  const realAIService = new SamarpitAIServiceAdapter();
+  const realAIService = new aiServiceAdapter();
   const service = new KnowledgeCreationService(realAIService);
 
   // 3. Run Pipeline
@@ -162,3 +162,4 @@ async function run() {
 run().catch(err => {
   console.error('Fatal Pipeline Error:', err);
 });
+
